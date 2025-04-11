@@ -1,0 +1,14 @@
+name: secondt workflow  # workflow name
+
+# This filed is for trigger events. There are many events availble
+on: workflow_dispatch 
+
+# Jobs
+jobs:
+  first-job: # Job name
+    runs-on: ubuntu-24.04 #https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners
+    steps:
+      - name: Print Greeting and Good Bye
+        run: |
+          echo "Greeting Indrajith"
+          echo "GoodBye Indrajith"
